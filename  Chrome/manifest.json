@@ -1,0 +1,18 @@
+{
+    "manifest_version": 2,
+
+    "name": "Article_Political_Keywords",
+    "version": "1.0",
+    "description": "Find Political Keywords!",
+    "browser_action": {
+      "default_popup": "popup.html",
+      "default_icon": "icon.png"
+    },
+    "permissions": [
+      "activeTab",
+      "<all_urls>"],
+      "content_security_policy": "script-src 'self' 'sha256-WOdSzz11/3cpqOdrm89LBL2UPwEU9EhbDtMy2OciEhs='",
+      "background": {
+        "page": "popup.html"
+      }  
+    }
