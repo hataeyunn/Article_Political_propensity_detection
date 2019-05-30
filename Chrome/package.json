@@ -1,0 +1,19 @@
+{
+  "name": "newsKeywords",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server1.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "4.17.0",
+    "socket.io": "2.2.0",
+    "ws": "^7.0.0"
+  },
+  "devDependencies": {},
+  "description": ""
+}
