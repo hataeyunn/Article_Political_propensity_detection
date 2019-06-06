@@ -1,0 +1,29 @@
+{
+  "name": "Article_Political_Keywords",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Find Political Keywords!",
+  "icons": { "16": "icons/icon.png"},
+  "browser_action": {
+    "default_icon": {
+      "16": "icons/icon.png"
+    },
+    "default_title": "Article_Political_Keywords",
+    "default_popup": "browseraction/popup.html"
+  },
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": ["jquery-2.1.3.min.js", "content.js"]
+    }
+  ],
+  "permissions": [ "tabs","http://*/" ]
+
+}
